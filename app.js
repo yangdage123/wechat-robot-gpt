@@ -10,7 +10,6 @@ wechaty
     .on('login',            user => console.log(`User ${user} logged in`))
     .on('message', async (message) => {
         await handleMessage(message, wechaty);
-        console.log('消息处理完成！')
     })
 wechaty.start();
 
